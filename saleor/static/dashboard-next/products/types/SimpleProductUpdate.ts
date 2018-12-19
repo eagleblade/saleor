@@ -238,6 +238,11 @@ export interface SimpleProductUpdate_productVariantUpdate_productVariant_product
   url: string;
 }
 
+export interface SimpleProductUpdate_productVariantUpdate_productVariant_product_thumbnail {
+  __typename: "Image";
+  url: string;
+}
+
 export interface SimpleProductUpdate_productVariantUpdate_productVariant_product_variants_images {
   __typename: "ProductImage";
   id: string;
@@ -257,7 +262,7 @@ export interface SimpleProductUpdate_productVariantUpdate_productVariant_product
   id: string;
   images: (SimpleProductUpdate_productVariantUpdate_productVariant_product_images | null)[] | null;
   name: string;
-  thumbnailUrl: string | null;
+  thumbnail: SimpleProductUpdate_productVariantUpdate_productVariant_product_thumbnail | null;
   variants: (SimpleProductUpdate_productVariantUpdate_productVariant_product_variants | null)[] | null;
 }
 
